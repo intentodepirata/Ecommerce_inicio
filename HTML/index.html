@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Releevant-Ecommerce</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font" >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Badulake-Burguer</title>
 </head>
 <body>
-    <header>
-        <a href="/HTML/index.html">
-            <img src="../assets/images/logo.png" alt="logo" width="50px">
-            <h4>My <span>Releevant</span>Store</h4>
-        </a>
-        <input type="search" name="search" placeholder="Buscar Productos">
-        <a href="#">Carrito</a>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a  href="/HTML/index.html"></a>
+                <img class="logo" src="../assets/images/logo.jpeg" alt="logo" width="50px">
+                <h4 class="">Badulake<span class="logo__bold">burguer</span></h4>
+                <input class="buscador" type="search" name="search" placeholder="Buscar Productos">
+                <a href="#">Carrito</a>
+            </div>
+
+                <div>
+                    <div class="barra__navegacion">
+                        <nav class="navegacion">
+                            <a class="navegacion__enlace" href="/HTML/productos.html">Todos los Producto</a>
+                            <a class="navegacion__enlace" href="/HTML/nosotros.html">Sobre Nosotros</a>
+                            <a class="navegacion__enlace" href="/HTML/contacto.html">Contacto</a>
+                            <a class="navegacion__enlace" href="/HTML/gadgets.html">Gadgets</a>
+                            <a class="navegacion__enlace" href="/HTML/ofertas.html">Oferta</a>
+                        </nav>
+                        <div class="navegacion__carrito">
+                            <a class="navegacion__enlace" href="/HTML/gadgets.html">Mis Pedidos</a>
+                            <a class="navegacion__enlace" href="/HTML/ofertas.html">Logout</a>
+                        </div>
+
+                    </div>
+                </div>              
+        </div>
     </header>
-    <nav>
-        <a href="/HTML/productos.html">Todos los Producto</a>
-        <a href="/HTML/nosotros.html">Sobre Nosotros</a>
-        <a href="/HTML/contacto.html">Contacto</a>
-        <a href="/HTML/gadgets.html">Gadgets</a>
-        <a href="/HTML/ofertas.html">Oferta</a>
-    </nav>
-    <main>
-        <div>
+    <main class="contenedor-principal">
+        <div class="login">
             <h3>Iniciar sesion</h3>
             <h5>Accede con tus datos anteriores</h5>
             <form action="">
@@ -32,7 +49,7 @@
                 <input type="submit" value="Iniciar Sesion">
             </form>
         </div>
-        <div>
+        <div class="registro">
             <h3>Registrate</h3>
             <h5>Crea una cuenta de Releevant store para adquirir productos</h5>
             <form action="">
@@ -85,7 +102,7 @@
         </div>
         <div>
             <h5>Unete a Nosotros</h5>
-            <form action="">
+            <form class="formulario">
                 <input type="email" placeholder="Introduce Tu Correo">
                 <input type="submit" value="Suscribirme">
                 <label for="politica">
@@ -100,5 +117,6 @@
             <img src="../assets/icons/instagram.png" alt="ig" width="30px">
         </div>
     </footer>
+    <script src="/js/modernizr.js"></script>
 </body>
 </html>
